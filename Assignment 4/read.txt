@@ -1,1 +1,31 @@
+Weather Data Analysis Report
 
+This project analyzes India’s weather data using Python to understand temperature, rainfall, and humidity patterns. The workflow includes data acquisition, cleaning, statistical summarization, and visualization.
+
+1. Data Loading
+The dataset is downloaded through KaggleHub and loaded into a Pandas DataFrame. Basic checks like head, info, and describe help verify the structure and quality of the data.
+
+2. Data Cleaning and Preparation
+Column names are standardized for consistency.
+The script identifies and converts the date column, sorts the data, and sets it as the index.
+Important weather metrics such as maximum temperature, minimum temperature, rainfall, and humidity are selected from the dataset using flexible column-name matching.
+
+Missing values are handled using:
+Forward and backward fill for temperature and humidity.
+Zero-fill for rainfall, since missing rainfall usually indicates no recorded rain.
+An optional city filter is applied; in this case, the analysis focuses on Delhi.
+
+3. Statistical Analysis
+Daily, monthly, and yearly statistics are computed with NumPy. These include mean, minimum, maximum, and standard deviation for each weather metric.
+This gives a clear summary of short-term and long-term weather trends.
+
+
+4. Grouping and Aggregation
+The data is grouped by:
+Month for monthly behavior
+Season (Winter, Pre-monsoon, Monsoon, Post-monsoon) for broader climate patterns
+This highlights temperature peaks, humidity shifts, and rainfall concentration during monsoon months.
+
+5. Exporting Results
+The cleaned dataset is exported as cleaned_weather.csv for further use.
+All plots are saved in the outputs/ directory.
