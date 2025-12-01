@@ -19,7 +19,6 @@ An optional city filter is applied; in this case, the analysis focuses on Delhi.
 Daily, monthly, and yearly statistics are computed with NumPy. These include mean, minimum, maximum, and standard deviation for each weather metric.
 This gives a clear summary of short-term and long-term weather trends.
 
-
 4. Grouping and Aggregation
 The data is grouped by:
 Month for monthly behavior
