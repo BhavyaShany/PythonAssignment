@@ -1,23 +1,15 @@
-Library Inventory Manager
 
-A lightweight command-line tool to help manage books in a library.
-It supports adding books, issuing and returning them, searching the catalog, and saving data in a JSON file.
-The project follows Object-Oriented Programming principles and uses file handling, logging, and modular structure.
+Library Management System – Code Review Report
+This project implements a simple library management system with support for adding books, issuing and returning them, searching, and storing data in a JSON catalog. The system is divided into two main components: Book and LibraryInventory.
 
-✨ Features
+Book Class
+The Book class is well-designed and uses dataclasses for clean initialization. It normalizes input values and ensures valid status states. Methods for issuing and returning a book work correctly, and the class provides both string representation and dictionary conversion for easy JSON storage.
 
-Add new books with title, author, and ISBN
+LibraryInventory Class
+The inventory class loads and saves book data reliably using JSON. It handles missing or corrupt files gracefully and prevents duplicate ISBNs. Search functionality by title and ISBN is implemented correctly, and methods for issuing and returning books update the catalog accurately.
 
-Issue and return books
+CLI Functionality
+The program includes a simple menu-driven interface that lets users add books, search, issue, return, and view all items. Input validation is handled well, and the catalog is saved after all relevant actions.
 
-Search by title or ISBN
-
-View complete catalog
-
-Persistent storage using JSON
-
-Proper exception handling
-
-Logging using Python’s logging module
-
-Clean project packaging with modules
+Overall Assessment
+The system is functional, cleanly written, and logically structured. Minor improvements include separating CLI code into a dedicated main.py file and removing duplicate code. With these adjustments, the project becomes neatly modular and production-ready for small-scale use.
