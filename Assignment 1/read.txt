@@ -1,1 +1,7 @@
+Daily Calorie Tracker 
 
+The Daily Calorie Tracker is a user-interactive Python program designed to help individuals monitor their food intake throughout the day. It begins by collecting the number of meals consumed and then records each meal’s name along with its calorie count. Once the entries are complete, the program calculates the total and average calorie intake for the day.
+
+The user is asked to provide a personal daily calorie limit, and the program compares the total intake against this threshold. Based on the result, it generates a clear status message indicating whether the user stayed within the limit or exceeded it. All results—including a neatly formatted table of meals, total calories, and average intake—are displayed for easy review.
+
+As an added feature, the program allows the user to save the entire report to a text file. The saved report includes a timestamp, the meal list, calorie values, and the final status. Overall, the project offers a simple and effective way to track daily nutrition and encourages mindful eating habits.
