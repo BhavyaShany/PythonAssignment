@@ -1,1 +1,36 @@
+Weather Data Analysis 
+The script imports weather data from Kaggle, cleans it, analyzes key metrics, and generates visualizations.
 
+1. Data Loading
+Downloads dataset using KaggleHub.
+Reads CSV into a DataFrame.
+Shows head, info, and summary.
+
+2. Data Cleaning
+Standardizes column names.
+Detects and converts date column.
+Sorts data and sets date as index.
+Automatically picks temperature, rainfall, and humidity columns from common variants.
+Fills missing values (FFILL/BFILL for temperature/humidity, zeros for rainfall).
+Optional: filters for a specific city (default: Delhi).
+
+3. Statistical Analysis
+Computes daily stats (mean, min, max, std) using NumPy.
+Resamples into monthly and yearly data.
+Computes monthly and yearly summary stats.
+
+4. Visualizations
+Generates and saves:
+Daily temperature trend (line plot)
+Monthly rainfall totals (bar chart)
+Humidity vs temperature (scatter)
+Combined rainfall vs temp trend (line + bar)
+
+5. Grouping & Aggregation
+Groups data by month and season.
+Calculates temperature/humidity ranges and rainfall totals.
+Defines Indian seasons (Winter, Pre-monsoon, Monsoon, Post-monsoon).
+
+6. Output
+Saves cleaned dataset as CSV.
+Stores all plots in the output director.
